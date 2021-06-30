@@ -6,11 +6,6 @@ const prefix = "!";
 const fs = require('fs');
 require('discord-buttons')(client);
 
-let embed = new Discord.MessageEmbed()
-	.setTitle(`Welcome to Chris's Social Community!`)
-	.setDescription(`To speak in our server you must verify in the channel after you have read through the rules and agree to them! If you need support open a ticket. \n\nThis is the support channel and this is the `)
-	.setColor("BLUE")
-
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
