@@ -53,7 +53,7 @@ module.exports = {
                 .setColor("PURPLE")
             LoggingChannel.send(logembed);
 				} else {
-					const offmsg = message.reply(offembed);
+					const offmsg = await message.reply(offembed);
 					setTimeout(function() { offmsg.delete(); }, 5000);
 					}
 					});
